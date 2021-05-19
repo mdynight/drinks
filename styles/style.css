@@ -1,0 +1,54 @@
+* {
+    font-family: serif;
+    font-size: 1em;
+}
+body {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 90%;
+    margin: 100px auto;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: none;
+    margin: none;
+}
+li {
+    padding: none;
+    margin: none;
+}
+#spec {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: center;
+}
+#drink {
+    margin-bottom: 30px;
+}
+.measure {
+    margin-right: .5em;
+}
+/* Could target nth childs of #Drink
+.measure::before {
+    content: " - "
+}*/
+
+pre {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    margin-bottom: 2px;
+}
+#post-area {
+    height: 35px;
+    overflow: hidden;
+}
+#post-area:hover {
+    height: 350px;
+    overflow: hidden;
+}
