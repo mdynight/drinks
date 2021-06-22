@@ -35,19 +35,19 @@ Either using a query or javascript to display recipes based on an expression ent
 
 This page is accessed via knowledge of the URL and asks for user login details before displaying a Web form that can add records to the database.
 
-|Fields|--|--|
-|:----|
-|Name|Required|
-|Author|
+|Fields|---|---|
+|:----|---|---|
+|Name|Required||
+|Author|||
 |Type|Required|Drop-down|
 |Mix|Required|Drop-down|
 |Serve|Required|Drop-down|
-|Garnish-x|
-|Garnish-y|Hidden|
+|Garnish-x|||
+|Garnish-y|Hidden||
 |Ingredient-1|Required|Drop-down|
 |Measurement-1|Required|Drop-down|
-|Ingredient-x|Hidden|
-|Measurement-x|Hidden|
+|Ingredient-x|Hidden||
+|Measurement-x|Hidden||
 
 
 ### Field behavior
