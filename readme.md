@@ -8,6 +8,26 @@ A Web page that renders a list of cocktail recipes accessed from a database. It 
 * Josh: Product design, Pre-vis design
 * Macy: Database Design, Developer
 
+## Planning
+### Technology
+| Languages |
+|---|
+| Markdown | HTML | CSS | PHP | SQL | Javascript |
+### Steps
+| Pre-production | |
+|---|---|
+|Datebase Design||
+|ERD||
+|Data Dictionary||
+|Page Design|||
+
+| Production |
+|---|
+| TBD |
+
+
+
+
 ## 'View' page
 
 ![View page](pre-viz/view.png 'Previs of View page')
