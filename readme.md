@@ -9,17 +9,17 @@ A Web page that renders a list of cocktail recipes accessed from a database. It 
 
 The page rendering the drinks will be known as the 'view' page. This page uses php to query and render the database using html and css.
 
-|Fields|
-|:----|
+|Fields|||
+|:----|---|---|
 |Name|Not Null|Primary Key|
-|Author|
-|Type|Not Null|
-|Mix|Not Null|
-|Serve|Not Null|
-|Garnish-x|
-|Garnish-y|
-|Ingredient-x|
-|Measurement-x|
+|Author|||
+|Type|Not Null||
+|Mix|Not Null||
+|Serve|Not Null||
+|Garnish-x|||
+|Garnish-y|||
+|Ingredient-x|||
+|Measurement-x|||
 
 
 ### Millilitre toggle
@@ -35,7 +35,7 @@ Either using a query or javascript to display recipes based on an expression ent
 
 This page is accessed via knowledge of the URL and asks for user login details before displaying a Web form that can add records to the database.
 
-|Fields|---|---|
+|Fields|||
 |:----|---|---|
 |Name|Required||
 |Author|||
