@@ -3,6 +3,11 @@
 ## Description
 A Web page that renders a list of cocktail recipes accessed from a database. It has search capability. There is another page /DRINKSDATABSE_USER which contains a Web form for entering records, which can only be accessed by registered users.
 
+## Team
+
+* Josh: Product design, Pre-vis design
+* Macy: Database Design, Developer
+
 ## 'View' page
 
 ![View page](pre-viz/view.png 'Previs of View page')
@@ -50,5 +55,8 @@ This page is accessed via knowledge of the URL and asks for user login details b
 |Measurement-x|Hidden||
 
 
-### Field behavior
+## Database
+### ERD
+### Data Dictionary
+
 
