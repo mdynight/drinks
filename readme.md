@@ -80,8 +80,7 @@ Either using a query or javascript to display recipes based on an expression ent
 
 ## 'User' page
 This page is accessed via knowledge of the URL and asks for user login details before displaying a Web form that can add records to the database.
-<form>
-    <label for='name'>Name: </label><input type='text' id='name' name='name' required>
+<form style='box-shadow: 5px 5px;border:1px solid black; padding: 8px 8px 8px 8px; width: 250px; margin: 0;'><label for='name'>Name: </label><input type='text' id='name' name='name' required>
     <label for='type'>Type: </label><input type='text' id='type' name='type' required>
     <label for='author'>Author: </label><input type='text' id='author' name='author' placeholder='optional'>
     <label for='mix'>Mix: </label><input type='text' id='mix' name='mix' required>
@@ -91,21 +90,6 @@ This page is accessed via knowledge of the URL and asks for user login details b
     <label for='measure-a'>Measure: </label><input type='text' id='measure-a' name='measure-a' required>
 </form>
 
-
-
-|Fields|||
-|:----|---|---|
-|Name|Required||
-|Author|||
-|Type|Required|Drop-down|
-|Mix|Required|Drop-down|
-|Serve|Required|Drop-down|
-|Garnish-x|||
-|Garnish-y|Hidden||
-|Ingredient-1|Required|Drop-down|
-|Measurement-1|Required|Drop-down|
-|Ingredient-x|Hidden||
-|Measurement-x|Hidden||
 
 
 ## Database
