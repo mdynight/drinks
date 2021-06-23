@@ -6,8 +6,12 @@ A Web page that renders a list of cocktail recipes accessed from a database. It 
 ## Team
 |Josh|Macy|
 |:--|:--|
-|Product design|Database design|
-|Developing|Developing|
+|Project design|Database design|
+|Product design|Database development|
+|PHP development|SQL development|
+|HTML development|JavaScript development|
+|CSS development|Testing|
+|Testing|
 
 ## Planning
 ### Technology
@@ -15,6 +19,7 @@ A Web page that renders a list of cocktail recipes accessed from a database. It 
 |:--|
 | Markdown | HTML | CSS | PHP | SQL | Javascript |
 ### Process
+> Project Design
 > Product Design
 >> User Experience
 >> Data/Field Identification
@@ -24,7 +29,7 @@ A Web page that renders a list of cocktail recipes accessed from a database. It 
 >> Data Dictionary
 
 > Database Development
-> Query Development
+> SQL Development
 >> Select Queries
 >> Insert Queries
 
@@ -41,6 +46,7 @@ A Web page that renders a list of cocktail recipes accessed from a database. It 
 > JavaScript Development
 >> Toggle
 >> Search
+>> Form field reveal
 
 > Testing
 > CSS Development
@@ -73,10 +79,19 @@ By default ingredient measurements are listed in ratio format, if a user prefers
 Either using a query or javascript to display recipes based on an expression entered by user
 
 ## 'User' page
-
-![User page](pre-viz/form.png 'Previs of User page')
-
 This page is accessed via knowledge of the URL and asks for user login details before displaying a Web form that can add records to the database.
+<form>
+    <label for='name'>Name: </label><input type='text' id='name' name='name' required>
+    <label for='type'>Type: </label><input type='text' id='type' name='type' required>
+    <label for='author'>Author: </label><input type='text' id='author' name='author' placeholder='optional'>
+    <label for='mix'>Mix: </label><input type='text' id='mix' name='mix' required>
+    <label for='serve'>Serve: </label><input type='text' id='serve' name='serve' required>
+    <label for='garnish-a'>Garnish: </label><input type='text' id='garnish-a' name='garnish-a' placeholder='optional'>  <button>+</button>
+    <label for='ingredient-a'>Ingredient: </label><input type='text' id='ingredient-a' name='ingredient-a' required>  <button>+</button>
+    <label for='measure-a'>Measure: </label><input type='text' id='measure-a' name='measure-a' required>
+</form>
+
+
 
 |Fields|||
 |:----|---|---|
