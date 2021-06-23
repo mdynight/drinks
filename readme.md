@@ -1,39 +1,44 @@
 # /DRINKSDATABASE
 
-## Description
+## About 
 A Web page that renders a list of cocktail recipes accessed from a database. It has search capability. There is another page /DRINKSDATABSE_USER which contains a Web form for entering records, which can only be accessed by registered users.
 
 ## Team
 
-* Josh: Product design, Pre-vis design
-* Macy: Database Design, Developer
+|Josh||
+|:--|
+|Product design| Pre-vis design|
+
+|Macy||
+|:--|
+|Database Design|Developer|
 
 ## Planning
 ### Technology
-| Languages |
-|---|
+| Languages ||||||
+|:--|
 | Markdown | HTML | CSS | PHP | SQL | Javascript |
 ### Steps
 | Pre-production | |
-|---|---|
+|:--|
 |Datebase Design||
 |ERD||
 |Data Dictionary||
 |Page Design|||
 
 | Production |
-|---|
+|:--|
 | TBD |
 
 
 
 
 ## 'View' page
-
-![View page](pre-viz/view.png 'Previs of View page')
-
+### Description
 The page rendering the drinks will be known as the 'view' page. This page uses php to query and render the database using html and css.
-
+### Mock-Up
+![View page](pre-viz/view.png 'Previs of View page')
+### Database Fields & Page Elements
 |Fields|||
 |:----|---|---|
 |Name|Not Null|Primary Key|
@@ -46,12 +51,11 @@ The page rendering the drinks will be known as the 'view' page. This page uses p
 |Ingredient-x|||
 |Measurement-x|||
 
-
-### Millilitre toggle
+### Features
+#### Millilitre toggle
 By default ingredient measurements are listed in ratio format, if a user prefers to see the recipe measured in millilitres a toggle option can change the display.
 
-
-### Search
+#### Search
 Either using a query or javascript to display recipes based on an expression entered by user
 
 ## 'User' page
