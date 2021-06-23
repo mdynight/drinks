@@ -4,37 +4,51 @@
 A Web page that renders a list of cocktail recipes accessed from a database. It has search capability. There is another page /DRINKSDATABSE_USER which contains a Web form for entering records, which can only be accessed by registered users.
 
 ## Team
-
-|Josh||
-|:--|
-|Product design| Pre-vis design|
-
-|Macy||
-|:--|
-|Database Design|Developer|
+|Josh|Macy|
+|:--|:--|
+|Product design|Database design|
+|Developing|Developing|
 
 ## Planning
 ### Technology
 | Languages ||||||
 |:--|
 | Markdown | HTML | CSS | PHP | SQL | Javascript |
-### Steps
-| Pre-production | |
-|:--|
-|Datebase Design||
-|ERD||
-|Data Dictionary||
-|Page Design|||
+### Process
+> Product Design
+>> User Experience
+>> Data/Field Identification
 
-| Production |
-|:--|
-| TBD |
+> Database Design
+>> ERD
+>> Data Dictionary
+
+> Database Development
+> Query Development
+>> Select Queries
+>> Insert Queries
+
+> PHP Development
+>> Database Connection
+>> Render Loop
+>> Insert
+
+> HTML Development
+>> Rendering
+>> Form
+
+> Testing
+> JavaScript Development
+>> Toggle
+>> Search
+
+> Testing
+> CSS Development
+>> Layout
+>> Styling
 
 
-
-
-## 'View' page
-### Description
+## Page i. 'View' page
 The page rendering the drinks will be known as the 'view' page. This page uses php to query and render the database using html and css.
 ### Mock-Up
 ![View page](pre-viz/view.png 'Previs of View page')
