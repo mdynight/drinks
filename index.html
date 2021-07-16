@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <title>Cocktail Book</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset='utf-8'>
+    </head>
+    <body>
+        <header>
+            <h1>Cocktail Book</h1>
+        </header>
+        <section id='about'>
+            <h2>Project Overview</h2>
+            <hr>
+            <p>Cocktail Book is a mutli-user Content Management System containing an end-user front-end for viewing database items, and a author-user backend for entering database items.</p>
+            <div class='page-box'>
+                <div class='pagething'>
+                    <p>Page One<br>/index.php</p>
+                </div>
+                <p>Renders a list of cocktail recipes accessed from a database. It has search capability and a meaurement toggle button.</p>
+            </div>
+            <div class='page-box'>
+                <div class='pagething'>
+                    <p>Page Two<br>/login.php</p>
+                </div>
+                <p>Web form for entering records to a database, if a user is registered.</p>
+            </div>
+        </section>
+        
+<!--
+Team Section 
+section > 
+    h2, hr, h3, a, ul
+                    > li
+-->
+        <section id='team'>
+            <h2>Team (Human Resources)</h2>
+            <hr>
+            <div class='profile-header'>
+            <img class='profile-thumb' src='media/macy-profile-pic.gif'><h3>Macy</h3>
+            <a href='mailto:macy@snakehouse.net'>macy (at) snakehouse (dot) net</a>
+            <span>Technoligist</span>
+            </div>
+            <ul>
+                <li>Database design</li>
+                <li>Database development</li>
+                <li>SQL development</li>
+                <li>JavaScript development</li>
+                <li>Testing</li>
+            </ul>
+            <h3>Josh</h3>
+            <a href='mailto:josh@snakehouse.net'>josh (at) snakehouse (dot) net</a>
+            <span>Project Management</span>
+            <ul>
+                <li>Project design</li>
+                <li>Product design</li>
+                <li>PHP development</li>
+                <li>HTML development</li>
+                <li>CSS development</li>
+                <li>Testing</li>
+            </ul>
+        </section>
+<!-- 
+Schedule section -->
+
+<!--
+Roll-Out section -->
+        
+<!-- 
+Tech section -->
+        <section>
+            <h2>Technology</h2>
+            <hr>
+            <h3>Languages</h3>
+            <ul id='lang-list'>
+                <li>Markdown</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PHP</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+        
+        
+<!-- 
+Process Section 
+sectiion >
+h2, hr, h3, ul
+            > li
+-->
+        <section id='process'>
+            <h2>Process</h2>
+            <hr>
+            <h3>Project design</h3>
+            <ul>
+                <li>File structure</li>
+                <li>Naming conventions</li>
+                <li>Technology</li>
+                <li>Process</li>
+                <li>Deligation</li>
+                <li>Respository</li>
+                <li>Communication</li>
+                <li>Project page</li>
+                <li>Costing</li>
+                <li>Returns</li>
+            </ul>
+            <h3>Product design</h3>
+            <ul>
+                <li>Visualisation</li>
+                <li>Formats</li>
+                <li>Mock up</li>
+                <li>User experience</li>
+                <li>Data identification</li>
+                <li>Prototyping</li>
+            </ul>
+            <h3>Database design</h3>
+            <ul>
+                <li>ERD</li>
+                <li>Data dictionary</li>
+            </ul>
+            <h3>Database development</h3>
+            <ul>
+                <li>Table development</li>
+            </ul>
+            <h3>SQL development</h3>
+            <ul>
+                <li>Select queries</li>
+                <li>Insert queries</li>
+            </ul>
+            <h3>PHP development</h3>
+            <ul>
+                <li>Database connection</li>
+                <li>Render loop</li>
+                <li>Insert</li>
+            </ul>
+            <h3>HTML development</h3>
+            <ul>
+                <li>Rendering</li>
+                <li>Form</li>
+            </ul>
+            <h3>Testing</h3>
+            <ul></ul>
+            <h3>JavaScript development</h3>
+            <ul>
+                <li>Toggle</li>
+                <li>Search</li>
+                <li>Form field reveal</li>
+            </ul>
+            <h3>Testing</h3>
+            <ul></ul>
+            <h3>CSS development</h3>
+            <ul>
+                <li>Layout</li>
+                <li>Type</li>
+                <li>Colours</li>
+                <li>Sounds</li>
+            </ul>
+        </section>
+        
+<!--
+Page i. section -->
+        <section>
+            <h2>Page i. 'View'</h2>
+            <hr>
+            <p>The page rendering the drinks will be known as the 'view' page. This page uses php to query and render the database using html and css.</p>
+            <h3>Mock-up</h3>
+            
+            <!-- Mock Up HTML -->
+            
+            <div id='m-container'>
+            <!-- The sectioned container -->    
+                <div id='m1-container'>
+                    <section id='m1-header'>
+                        <input type='search' placeholder=' search'>
+                        <button>ml</button>
+                    </section>
+                  <ul id='drink'>
+                        <li class='name'>Gin Martini</li>
+                        <li class='type'>Martini</li>
+                        <li class='author'></li>
+                        <li class='mix-serve'>Stir / Up</li>
+                        <li class='garnish'>
+                            <span class='garnish'>Lemon Twist</span>
+                            <span class='garnish'>or<span>
+                            <span class='garnish'>Olives</span>
+                        </li>
+                        <li class='spec'>
+                            <span class='measure-a'>1/2</span>
+                            <span class='ingredient-a'>Dry Vermouth</span>
+                            <span class='measure-b'>2</span>
+                            <span class='ingredient-b'>Gin</span>
+                        </li>
+                    </ul>
+                    </ul>
+                </div>
+                <br>
+                <div id='m2-container'>
+                    <section id='m2-header'>
+                        <input type='search' placeholder='search'>
+                        <button>ml</button>
+                    </section>
+                  <ul id='drink'>
+                        <li class='name'>Gin Martini</li>
+                        <li class='type'>Martini</li>
+                        <li class='author'></li>
+                        <li class='mix-serve'>Stir / Up</li>
+                        <li class='garnish'>
+                            <span class='garnish'>Lemon Twist</span>
+                            <span class='garnish'>or<span>
+                            <span class='garnish'>Olives</span>
+                        </li>
+                        <li class='spec'>
+                            <span class='measure-a'>1/2</span>
+                            <span class='ingredient-a'>Dry Vermouth</span>
+                            <span class='measure-b'>2</span>
+                            <span class='ingredient-b'>Gin</span>
+                        </li>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <h3>Database fields</h3>
+            <table>
+                <tr>
+                    <th>Field</th>
+                    <th>Element</th>
+                </tr>
+                <tr>
+                    <td>drink</td>
+                    <td>ul</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>li</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>li</td>
+                </tr>
+                <tr>
+                    <td>author</td>
+                    <td>li</td>
+                </tr>
+                <tr>
+                    <td>mix-serve</td>
+                    <td>li</td>
+                </tr>
+                <tr>
+                    <td>garnish</td>
+                    <td>li</td>
+                </tr>
+                <tr>
+                    <td>garnish-a</td>
+                    <td>span</td>
+                </tr>
+                <tr>
+                    <td>and-or</td>
+                    <td>span</td>
+                </tr>
+                <tr>
+                    <td>garnish-b</td>
+                    <td>span</td>
+                </tr>
+                <tr>
+                    <td>spec</td>
+                    <td>li</td>
+                </tr>
+                <tr>
+                    <td>measure-a</td>
+                    <td>span</td>
+                </tr>
+                <tr>
+                    <td>ingredient-a</td>
+                    <td>span</td>
+                </tr>
+                <tr>
+                    <td>measure-b</td>
+                    <td>span</td>
+                </tr>
+                <tr>
+                    <td>ingredient-b</td>
+                    <td>span</td>
+                </tr>
+            </table>
+        </section>
+        <section id='page-2'>
+            <h2>Page ii. 'User'</h2>
+            <hr>
+            <p>The page only display a log-in option if the user is not logged-in already.</p>
+            <div id='page-2-mock-container'>
+                <div id='page-2-mock-logged-out'>
+                    <section id='page-2-header'>
+                        <input type='text' placeholder='user'>
+                        <input type='text' placeholder='password'>
+                        <button>Log In</button>
+                    </section>
+                    <section id='page-2-body'>
+                        <p>Log in to add drinks to database</p>
+                    </section>
+                </div>
+                <br>
+                <p>Once the user is logged in, a Web form is displayed. HTML, serverside, and Javascript validation are required for best user-experience. Once the fields are filled and meet requirements the user can click the submit button to run the script which will POST the values to the database. Some fields have datasets as value options. There is an and/or boolean field which is activated by buttons, and reveals a new input on click. The button following the ingredient input will reveak a new input on click.
+<!--  Alternatively may use javascript to reveal the new input if the previous input has a value -->
+                </p>
+                
+                <div id='page-2-mock-webform'>
+                     <section id='page-2-header'>
+                        <button>Log Out</button>
+                    </section>
+                    <section id='page-2-body'>
+                        <form>
+                            <label>Drink Name: </label>
+                            <input type='text'>
+                            <br>
+                            <label>Type: </label>
+                            <input type='text'>
+                            <br>
+                            <label>Author: </label>
+                            <input type='text'>
+                            <br>
+                            <label>Mix: </label>
+                            <input list='mix' size='13'>
+                            <datalist id='mix'>
+                                <option value='Stir'>
+                                <option value='Long Shake'>
+                                <option value='Shake'>
+                                <option value='Quick Shake'>
+                                <option value='Whip'>
+                            </datalist>
+                            <label>Serve: </label>
+                            <input list='serve' size='13'>
+                            <datalist id='serve'>
+                                <option value='Up'>
+                                <option value='Block'>
+                                <option value='Crushed'>
+                            </datalist>
+                            <br>
+                            <label>Garnish: </label>
+                            <input type='text'>
+                            <button>and</button><button>or</button>
+                            <br>
+                            <input list='measure' size='8'>
+                            <datalist id='measure'>
+                                <option value='Dashes'>
+                                <option value='1/8'>
+                                <option value='3/8'>
+                                <option value='1/4'>
+                                <option value='1/2'>
+                                <option value='3/4'>
+                                <option value='1'>
+                                <option value='1 1/4'>
+                                <option value='1 1/2'>
+                                <option value='1 3/4'>
+                                <option value='2'>
+                                <option value='2 1/4'>
+                                <option value='2 1/2'>
+                                <option value='Float'>
+                            </datalist>
+                            <label>Of: </label>
+                            <input type='text'>
+                            <button>and</button>
+                            <br>
+                            <button>Submit</button>
+                        </form>
+                    </section>
+                </div>
+                <p>Once submitted confirmation will be displayed on a new page. Ooptions to return to index.php or user.php will be shown</p>
+                                <div id='page-2-mock-webform'>
+                     <section id='page-2-header'>
+                        <button>Log Out</button>
+                    </section>
+                    <section id='page-2-body'>
+                        <p>Thanks, the recipe was submiited successfully.</p>
+                        <button>Back to honme</button>
+                        <button>Submit another recipe</button>
+                    </section>
+                </div>
+            </div>
+        </section>
+<!--
+Database Design section -->
+        <section>
+            <h2>Database Design</h2>
+            <hr>
+            <h3>Entity Relationship Diagram</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568 103"><defs><style>.cls-1{font-size:12px;font-family:NotoSans-Black, Noto Sans;font-weight:800;}.cls-2{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><text class="cls-1" transform="translate(56.74 55.79)">DRINK</text><text class="cls-1" transform="translate(256.59 55.79)">MEASURE</text><text class="cls-1" transform="translate(457.59 54.79)">INGREDIENT</text><text class="cls-1" transform="translate(154.08 41.52)">1</text><text class="cls-1" transform="translate(363.08 41.52)">N</text><text class="cls-1" transform="translate(192.08 41.52)">M</text><text class="cls-1" transform="translate(406.08 41.52)">1</text><polygon class="cls-2" points="1 1.5 1 101.5 151 101.5 151 51 151 1.5 1 1.5"/><polygon class="cls-2" points="359 2 209 2 209 50.88 151 51 209 50.97 209 102 359 102 359 51 417 50.88 359 50.91 359 2"/><polygon class="cls-2" points="417 1 417 50.88 417 101 567 101 567 1 417 1"/></g></g></svg>
+            <h3>Data Dictionary</h3>
+            <table>
+                <tr>
+                    <th>P/F</th>
+                    <th>Field Name</th>
+                    <th>Data Type</th>
+                    <th>Field Size</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>p</td>
+                    <td>name</td>
+                    <td>varchar</td>
+                    <td>25</td>
+                    <td>name of the drink (recipe)</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>type</td>
+                    <td>varchar</td>
+                    <td>25</td>
+                    <td>category for search purposes</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>author</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>recognition for the recipe author</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>mix</td>
+                    <td>varchar</td>
+                    <td>10</td>
+                    <td>way drink is made (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>serve</td>
+                    <td>varchar</td>
+                    <td>10</td>
+                    <td>way drink is served (from options)</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>garnish-a</td>
+                    <td>varchar</td>
+                    <td>25</td>
+                    <td>optional 'garnish' ingredient</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>and-or</td>
+                    <td>varchar</td>
+                    <td>3</td>
+                    <td>submits 'and' || 'or'</td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>garnish-b</td>
+                    <td>varchar</td>
+                    <td>25</td>
+                    <td>second optional 'garnish' ingredient</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>ingredient-a</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>required recipe ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>measure-a</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>required meaurement for ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>ingredient-b</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>required recipe ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>measure-b</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>required meaurement for ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>ingredient-c</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>optional recipe ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>measure-c</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>roptionalmeaurement for ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>ingredient-d</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>optional recipe ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>measure-d</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>roptionalmeaurement for ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>ingredient-e</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>optional recipe ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>measure-e</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>roptionalmeaurement for ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>ingredient-f</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>optional recipe ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>measure-f</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>roptionalmeaurement for ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>ingredient-e</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>optional recipe ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>measure-e</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>roptionalmeaurement for ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>ingredient-g</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>optional recipe ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>measure-g</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>roptionalmeaurement for ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>ingredient-h</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>optional recipe ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>measure-h</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>roptionalmeaurement for ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>ingredient-i</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>optional recipe ingredient (from options)</td>
+                </tr>
+                <tr>
+                    <td>f</td>
+                    <td>measure-i</td>
+                    <td>varchar</td>
+                    <td>50</td>
+                    <td>roptionalmeaurement for ingredient (from options)</td>
+                </tr>
+
+                
+                
+            </table>
+        </section>
+    </body>
+</html>
+
+
+            <style>
+/* General Styles */
+                * {
+                    font-family: monospace;
+                    font-size: 12px;
+                }
+                h1,h2,h3,h4,h5 {
+                    font-family: sans-serif;
+                    font-size: 18px;
+                }
+                h1 {
+                    font-size: 28px;
+                    margin-bottom: 0;
+                }
+                h2 { 
+                    margin-top: 60px;
+                    font-size: 24px;
+                    margin-bottom: 5px;
+                }
+                h3 {
+                   display: inline-block;
+                    padding: 4px;
+                    text-align: center;
+                    margin: 0px 10px;
+                }
+                body {
+                    margin: 0 10px;
+                    max-width: 480px;
+                }
+                
+/*  About Styles */
+                .page-box {
+                    display: flex;
+                    flex-shrink: 0;
+                    margin-bottom: 10px;
+                }
+                .pagething {
+                    border: 1px solid black;
+                    min-width: 80px;
+                    height: 100px;
+                    box-shadow: 5px 5px;
+                    margin-right: 20px;
+                }
+                .pagething p {
+                    font-family: sans-serif;
+                    font-weight: 800;
+                    margin: 30px auto;
+                    text-align: center;
+                }
+                 
+/* Team Styles */
+                #team ul {
+                    margin-top: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style-type: none;
+                    padding: 5px;
+                    border: 1px solid black;
+                    box-shadow: 5px 5px;
+                }
+                #team ul li {
+                    margin: 5px;
+                    background: hsl(0, 0%, 80%);
+                    padding: 5px;
+                    width: 100px;
+                    height: 50px;
+                }               
+
+/* Technology Styles 
+It's readable and not that important so leaving this as is for now '*/
+                #lang-list {
+                    display: flex;
+                    list-style-type: none;
+                    padding: 5px;
+                }
+                #lang-list li {
+                    margin-left: 10px;
+                    background: hsl(0, 0%, 80%);
+                    padding: 5px;
+                }
+                
+/* Process Styles */
+                #process ul {
+                    margin-top: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style-type: none;
+                    padding: 5px;
+                    border: 1px solid black;
+                    box-shadow: 5px 5px black;
+                }
+                #process ul li {
+                    margin: 5px;
+                    background: hsl(0, 0%, 80%);
+                    padding: 5px;
+                    width: 100px;
+                    height: 100px;
+                }
+                   
+                
+  /* Styles for mockup */                  
+                #m-container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #m1-header {
+                    display: flex;
+                    margin: 10px 0 40px;
+                    justify-content: space-between;
+                }
+                #m1-header input {
+                    width: 80%;
+                }
+                #m1-header button {
+                    width: 10%;
+                }
+                #m1-container {
+                    border:1px solid black;
+                    width:350px;
+                    padding:8px;
+                    box-shadow:5px 5px;
+                    margin-right: 10px;
+                }
+                #m1-container ul {
+                    display: grid;
+                    list-style-type:none;
+                    padding:0;
+                    margin:0;
+                    grid-template-columns: auto;
+                    grid-gap: 5px;
+                    grid-template-areas:
+                        "name name name name mix-serve"
+                        "name name name name garnish"
+                        "spec spec spec spec garnish"
+                        "spec spec spec spec garnish"
+                        "spec spec spec spec garnish"
+                }
+                #m2-header {
+                    display: flex;
+                    margin: 10px 0 40px;
+                    justify-content: space-between;
+                }
+                #m2-header input {
+                    width: 80%;
+                }
+                #m2-header button {
+                    width: 10%;
+                }
+                #m2-container {
+                    border:1px solid black;
+                    width:350px;
+                    padding:8px;
+                    box-shadow:5px 5px;
+                }
+                #m2-container ul {
+                    display: grid;
+                    list-style-type:none;
+                    padding:0;
+                    margin:0;
+                    grid-gap: 5px;
+                    grid-template-areas:
+                        "name name name name mix-serve"
+                        "name name name name garnish"
+                        "spec spec spec spec garnish"
+                        "spec spec spec spec garnish"
+                        "spec spec spec spec garnish"
+                }
+                #m1-container .name {
+                    background: aquamarine;
+                }
+                #m1-container .mix-serve {
+                    background: aquamarine;
+                }
+                #m1-container .garnish {
+                    background: aliceblue;
+                }
+                #m1-container .spec {
+                    background: cornsilk;
+                }
+                .name {
+                    grid-area: name;
+                }
+                .name:hover .mix-serve {
+                    background: red;
+                }
+                .type {
+                    display: none;
+                }
+                .mix-serve {
+                    grid-area: mix-serve;
+                    text-align: end;
+                }
+                .garnish {
+                    grid-area: garnish;
+                    text-align: end;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .spec {
+                    grid-area: spec;
+                    display: grid;
+                    display: grid;
+                    grid-template-areas: 
+                        "measure-a ingredient-a"
+                        "measure-b ingredient-b";
+                }
+                .measure {
+                    grid-area: measure;
+                    width: 25%;
+                }
+                .ingredient {
+                    grid-area: ingredient;
+                }
+                
+                
+/* Fields Styles */
+                table, th, td {
+                    border: 1px solid black;
+                    text-align: center;
+                }
+/* Page 2 Styles */
+                #page-2-mock-container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #page-2-mock-logged-out {
+                    border:1px solid black;
+                    width:350px;
+                    padding:8px;
+                    box-shadow:5px 5px;
+                }
+                #page-2-mock-webform {
+                    border:1px solid black;
+                    width:350px;
+                    padding:8px;
+                    box-shadow:5px 5px;
+                }
+                #page-2-header {
+                    margin-bottom: 20px;
+                }
+                
+                
+/* Team Styles */
+                .profile-header {
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                }
+                .profile-thumb {
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 5000px;
+                }
+            </style>
