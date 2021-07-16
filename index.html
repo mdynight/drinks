@@ -239,7 +239,7 @@ Page i. section -->
                 </div>
             </div>
             <br>
-            <h3>Database fields</h3>
+            <h3>Page elements</h3>
             <table>
                 <tr>
                     <th>Field</th>
@@ -405,6 +405,7 @@ Database Design section -->
             <h3>Entity Relationship Diagram</h3>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 568 103"><defs><style>.cls-1{font-size:12px;font-family:NotoSans-Black, Noto Sans;font-weight:800;}.cls-2{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><text class="cls-1" transform="translate(56.74 55.79)">DRINK</text><text class="cls-1" transform="translate(256.59 55.79)">MEASURE</text><text class="cls-1" transform="translate(457.59 54.79)">INGREDIENT</text><text class="cls-1" transform="translate(154.08 41.52)">1</text><text class="cls-1" transform="translate(363.08 41.52)">N</text><text class="cls-1" transform="translate(192.08 41.52)">M</text><text class="cls-1" transform="translate(406.08 41.52)">1</text><polygon class="cls-2" points="1 1.5 1 101.5 151 101.5 151 51 151 1.5 1 1.5"/><polygon class="cls-2" points="359 2 209 2 209 50.88 151 51 209 50.97 209 102 359 102 359 51 417 50.88 359 50.91 359 2"/><polygon class="cls-2" points="417 1 417 50.88 417 101 567 101 567 1 417 1"/></g></g></svg>
             <h3>Data Dictionary</h3>
+            <h4>USER</h4>
             <table>
                 <tr>
                     <th>P/F</th>
@@ -415,10 +416,36 @@ Database Design section -->
                 </tr>
                 <tr>
                     <td>p</td>
+                    <td>username</td>
+                    <td>varchar</td>
+                    <td>25</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>password</td>
+                    <td>varchar</td>
+                    <td>25</td>
+                    <td></td>
+                </tr>
+            </table>
+            <h4>DRINK</h4>
+            <table>
+                <tr>
+                    <th>P/F</th>
+                    <th>Field Name</th>
+                    <th>Data Type</th>
+                    <th>Field Size</th>
+                    <th>Notes</th>
+                    
+                </tr>
+                <tr>
+                    <td>p</td>
                     <td>name</td>
                     <td>varchar</td>
                     <td>25</td>
                     <td>name of the drink (recipe)</td>
+                    
                 </tr>
                 <tr>
                     <td>-</td>
@@ -426,6 +453,7 @@ Database Design section -->
                     <td>varchar</td>
                     <td>25</td>
                     <td>category for search purposes</td>
+                    
                 </tr>
                 <tr>
                     <td>-</td>
@@ -458,8 +486,8 @@ Database Design section -->
                 <tr>
                     <td>-</td>
                     <td>and-or</td>
-                    <td>varchar</td>
-                    <td>3</td>
+                    <td>boolean</td>
+                    <td>-</td>
                     <td>submits 'and' || 'or'</td>
                 </tr>
                 <tr>
