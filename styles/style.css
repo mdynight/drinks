@@ -72,12 +72,12 @@ body {
 
 /* Technology Styles 
 It's readable and not that important so leaving this as is for now '*/
-#lang-list {
+#tech ul {
     display: flex;
     list-style-type: none;
     padding: 5px;
 }
-#lang-list li {
+#tech li {
     margin-left: 10px;
     background: hsl(0, 0%, 80%);
     padding: 5px;
