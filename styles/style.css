@@ -1,0 +1,249 @@
+                * {
+                    font-family: monospace;
+                    font-size: 12px;
+                }
+                h1,h2,h3,h4,h5 {
+                    font-family: sans-serif;
+                    font-size: 18px;
+                }
+                h1 {
+                    font-size: 28px;
+                    margin-bottom: 0;
+                }
+                h2 { 
+                    margin-top: 60px;
+                    font-size: 24px;
+                    margin-bottom: 5px;
+                }
+                h3 {
+                   display: inline-block;
+                    padding: 4px;
+                    text-align: center;
+                    margin: 0px 10px;
+                }
+                body {
+                    margin: 0 10px;
+                    max-width: 480px;
+                }
+                
+/*  About Styles */
+                .page-box {
+                    display: flex;
+                    flex-shrink: 0;
+                    margin-bottom: 10px;
+                }
+                .pagething {
+                    border: 1px solid black;
+                    min-width: 80px;
+                    height: 100px;
+                    box-shadow: 5px 5px;
+                    margin-right: 20px;
+                }
+                .pagething p {
+                    font-family: sans-serif;
+                    font-weight: 800;
+                    margin: 30px auto;
+                    text-align: center;
+                }
+                 
+/* Team Styles */
+                #team ul {
+                    margin-top: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style-type: none;
+                    padding: 5px;
+                    border: 1px solid black;
+                    box-shadow: 5px 5px;
+                }
+                #team ul li {
+                    margin: 5px;
+                    background: hsl(0, 0%, 80%);
+                    padding: 5px;
+                    width: 100px;
+                    height: 50px;
+                }               
+
+/* Technology Styles 
+It's readable and not that important so leaving this as is for now '*/
+                #lang-list {
+                    display: flex;
+                    list-style-type: none;
+                    padding: 5px;
+                }
+                #lang-list li {
+                    margin-left: 10px;
+                    background: hsl(0, 0%, 80%);
+                    padding: 5px;
+                }
+                
+/* Process Styles */
+                #process ul {
+                    margin-top: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style-type: none;
+                    padding: 5px;
+                    border: 1px solid black;
+                    box-shadow: 5px 5px black;
+                }
+                #process ul li {
+                    margin: 5px;
+                    background: hsl(0, 0%, 80%);
+                    padding: 5px;
+                    width: 100px;
+                    height: 100px;
+                }
+                   
+                
+  /* Styles for mockup */                  
+                #m-container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #m1-header {
+                    display: flex;
+                    margin: 10px 0 40px;
+                    justify-content: space-between;
+                }
+                #m1-header input {
+                    width: 80%;
+                }
+                #m1-header button {
+                    width: 10%;
+                }
+                #m1-container {
+                    border:1px solid black;
+                    width:350px;
+                    padding:8px;
+                    box-shadow:5px 5px;
+                    margin-right: 10px;
+                }
+                #m1-container ul {
+                    display: grid;
+                    list-style-type:none;
+                    padding:0;
+                    margin:0;
+                    grid-template-columns: auto;
+                    grid-gap: 5px;
+                    grid-template-areas:
+                        "name name name name mix-serve"
+                        "name name name name garnish"
+                        "spec spec spec spec garnish"
+                        "spec spec spec spec garnish"
+                        "spec spec spec spec garnish"
+                }
+                #m2-header {
+                    display: flex;
+                    margin: 10px 0 40px;
+                    justify-content: space-between;
+                }
+                #m2-header input {
+                    width: 80%;
+                }
+                #m2-header button {
+                    width: 10%;
+                }
+                #m2-container {
+                    border:1px solid black;
+                    width:350px;
+                    padding:8px;
+                    box-shadow:5px 5px;
+                }
+                #m2-container ul {
+                    display: grid;
+                    list-style-type:none;
+                    padding:0;
+                    margin:0;
+                    grid-gap: 5px;
+                    grid-template-areas:
+                        "name name name name mix-serve"
+                        "name name name name garnish"
+                        "spec spec spec spec garnish"
+                        "spec spec spec spec garnish"
+                        "spec spec spec spec garnish"
+                }
+                #m1-container .name {
+                    background: aquamarine;
+                }
+                #m1-container .mix-serve {
+                    background: aquamarine;
+                }
+                #m1-container .garnish {
+                    background: aliceblue;
+                }
+                #m1-container .spec {
+                    background: cornsilk;
+                }
+                .name {
+                    grid-area: name;
+                }
+                .name:hover .mix-serve {
+                    background: red;
+                }
+                .type {
+                    display: none;
+                }
+                .mix-serve {
+                    grid-area: mix-serve;
+                    text-align: end;
+                }
+                .garnish {
+                    grid-area: garnish;
+                    text-align: end;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .spec {
+                    grid-area: spec;
+                    display: grid;
+                    display: grid;
+                    grid-template-areas: 
+                        "measure-a ingredient-a"
+                        "measure-b ingredient-b";
+                }
+                .measure {
+                    grid-area: measure;
+                    width: 25%;
+                }
+                .ingredient {
+                    grid-area: ingredient;
+                }
+/* Fields Styles */
+                table, th, td {
+                    border: 1px solid black;
+                    text-align: center;
+                }
+/* Page 2 Styles */
+                #page-2-mock-container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                #page-2-mock-logged-out {
+                    border:1px solid black;
+                    width:350px;
+                    padding:8px;
+                    box-shadow:5px 5px;
+                }
+                #page-2-mock-webform {
+                    border:1px solid black;
+                    width:350px;
+                    padding:8px;
+                    box-shadow:5px 5px;
+                }
+                #page-2-header {
+                    margin-bottom: 20px;
+                }
+                
+                
+/* Team Styles */
+                .profile-header {
+                    display: flex;
+                    align-content: center;
+                    align-items: center;
+                }
+                .profile-thumb {
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 5000px;
+                }
